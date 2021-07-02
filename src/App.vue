@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DashboardLayout from './dashboard/Index.vue';
+import DashboardLayout from './dashboard/Layout.vue';
 
 export default {
   components: {
