@@ -1,14 +1,14 @@
 <template>
-  <Content title="Documentation" />
+  <Doc />
 </template>
 
 <script>
-import Content from '../../components/Content.vue';
+import Doc from '../../components/docs/Doc.vue';
 
 export default {
   name: 'DocumentationPage',
   components: {
-    Content,
+    Doc,
   },
 };
 </script>
