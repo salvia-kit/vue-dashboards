@@ -210,7 +210,7 @@
             <a href="#" class="block relative">
               <img
                 alt="Enoch Ndika"
-                src="https://pbs.twimg.com/profile_images/1319296543602585607/ZYcrXiRu_400x400.jpg"
+                src="/images/1.jpg"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
@@ -249,7 +249,7 @@
             <a href="#" class="block relative">
               <img
                 alt="Lionel Messi"
-                src="https://res.cloudinary.com/beloved/image/upload/v1625012315/Assets/Lionel-Messi_ijoqtz.jpg"
+                src="/images/2.jpg"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
@@ -288,7 +288,7 @@
             <a href="#" class="block relative">
               <img
                 alt="Jonathan Ilunga"
-                src="https://res.cloudinary.com/beloved/image/upload/v1623599101/Assets/ilunga_xrvvfm.jpg"
+                src="/images/4.jpg"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
@@ -327,7 +327,7 @@
             <a href="#" class="block relative">
               <img
                 alt="Maurice Lokumba"
-                src="https://res.cloudinary.com/beloved/image/upload/v1623601503/Assets/mauricio_hb9kmh.jpg"
+                src="/images/5.jpg"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
@@ -366,7 +366,7 @@
             <a href="#" class="block relative">
               <img
                 alt="CR7"
-                src="https://res.cloudinary.com/beloved/image/upload/v1625012517/Assets/cristiano-ronaldo-portugal-2021_13dokmcp1jf0g1ptvh04ja64y1_r7tpt1.png"
+                src="/images/3.png"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
@@ -405,7 +405,7 @@
             <a href="#" class="block relative">
               <img
                 alt="Dave Glad"
-                src="https://pbs.twimg.com/profile_images/1361584908385288195/zgSA8jyq.jpg"
+                src="/images/6.jpg"
                 class="mx-auto object-cover rounded-full h-10 w-10"
               />
             </a>
