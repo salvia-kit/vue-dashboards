@@ -15,8 +15,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'RecycleBinIcon',
-};
-</script>
+<script setup></script>

@@ -2,13 +2,6 @@
   <Doc />
 </template>
 
-<script>
+<script setup>
 import Doc from '../../components/docs/Doc.vue';
-
-export default {
-  name: 'DocumentationPage',
-  components: {
-    Doc,
-  },
-};
 </script>

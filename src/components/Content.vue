@@ -755,14 +755,13 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Content',
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
+<script setup>
+import { defineProps } from 'vue';
+
+defineProps({
+  title: {
+    type: String,
+    default: '',
   },
-};
+});
 </script>

@@ -301,13 +301,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Snippet from './Snippet.vue';
 import JsIcon from './icons/JsIcon.vue';
 import VueIcon from './icons/VueIcon.vue';
 import FolderIcon from './icons/FolderIcon.vue';
-export default {
-  name: 'Doc',
-  components: { Snippet, FolderIcon, VueIcon, JsIcon },
-};
 </script>

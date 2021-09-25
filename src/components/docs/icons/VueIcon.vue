@@ -23,16 +23,13 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'VueIcon',
-  props: {
-    extendClass: {
-      type: String,
-      default: '',
-    },
-  },
-};
-</script>
+<script setup>
+import { defineProps } from 'vue';
 
-<style scoped></style>
+defineProps({
+  extendClass: {
+    type: String,
+    default: '',
+  },
+});
+</script>

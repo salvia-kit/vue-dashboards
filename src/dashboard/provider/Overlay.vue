@@ -10,19 +10,9 @@
   />
 </template>
 
-<script>
+<script setup>
 import { inject } from 'vue';
 
-export default {
-  name: 'Overlay',
-  setup() {
-    const open = inject('open');
-    const toggle = inject('toggle');
-
-    return {
-      open,
-      toggle,
-    };
-  },
-};
+const open = inject('open');
+const toggle = inject('toggle');
 </script>

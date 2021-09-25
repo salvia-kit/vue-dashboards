@@ -15,8 +15,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'TerminalIcon',
-};
-</script>
+<script setup></script>

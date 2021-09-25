@@ -15,16 +15,15 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'FileIcon',
-  props: {
-    extendClass: {
-      type: String,
-      default: '',
-    },
+<script setup>
+import { defineProps } from 'vue';
+
+defineProps({
+  extendClass: {
+    type: String,
+    default: '',
   },
-};
+});
 </script>
 
 <style scoped></style>

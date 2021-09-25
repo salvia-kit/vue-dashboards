@@ -80,15 +80,8 @@
   </header>
 </template>
 
-<script>
+<script setup>
 import { inject } from 'vue';
 
-export default {
-  name: 'TopNavigation',
-  setup() {
-    const toggle = inject('toggle');
-
-    return { toggle };
-  },
-};
+const toggle = inject('toggle');
 </script>

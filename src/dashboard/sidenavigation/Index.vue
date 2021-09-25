@@ -20,30 +20,23 @@
   </aside>
 </template>
 
-<script>
-import { inject } from 'vue';
+<script setup>
+import { inject, defineProps } from 'vue';
 import SidenavItems from './Items.vue';
 import SidenavHeader from './Header.vue';
 
-export default {
-  name: 'SideNavigation',
-  components: { SidenavItems, SidenavHeader },
-  props: {
-    mobilePosition: {
-      type: String,
-      default: '',
-    },
+defineProps({
+  mobilePosition: {
+    type: String,
+    default: '',
   },
-  setup() {
-    const open = inject('open');
+});
 
-    const style = {
-      left: 'left-0',
-      right: 'right-0',
-    };
+const open = inject('open');
 
-    return { open, style };
-  },
+const style = {
+  left: 'left-0',
+  right: 'right-0',
 };
 </script>
 

@@ -2,13 +2,6 @@
   <Content title="Recycle Bin" />
 </template>
 
-<script>
+<script setup>
 import Content from '../../components/Content.vue';
-
-export default {
-  name: 'RecycleBinPage',
-  components: {
-    Content,
-  },
-};
 </script>

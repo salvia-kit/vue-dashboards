@@ -17,19 +17,12 @@
   </pre>
 </template>
 
-<script>
-export default {
-  name: 'Snippet',
-  setup() {
-    const snippets = `<sidenav-item title="Dashboard" to="/">
+<script setup>
+const snippets = `<sidenav-item title="Dashboard" to="/">
       <dashboard-icon />
     </sidenav-item>
 
     <sidenav-item title="Projects" to="/admin/projects">
       <projects-icon />
     </sidenav-item>`;
-
-    return { snippets };
-  },
-};
 </script>

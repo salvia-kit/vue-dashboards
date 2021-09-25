@@ -13,8 +13,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'MediasIcon',
-};
-</script>
+<script setup></script>

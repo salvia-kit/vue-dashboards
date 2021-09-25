@@ -13,8 +13,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'SettingsIcon',
-};
-</script>
+<script setup></script>

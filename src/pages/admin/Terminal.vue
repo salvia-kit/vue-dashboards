@@ -2,13 +2,6 @@
   <Content title="Terminal" />
 </template>
 
-<script>
+<script setup>
 import Content from '../../components/Content.vue';
-
-export default {
-  name: 'TerminalPage',
-  components: {
-    Content,
-  },
-};
 </script>

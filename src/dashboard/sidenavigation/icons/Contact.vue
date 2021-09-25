@@ -11,10 +11,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'ContactIcon',
-};
-</script>
-
-<style scoped></style>
+<script setup></script>

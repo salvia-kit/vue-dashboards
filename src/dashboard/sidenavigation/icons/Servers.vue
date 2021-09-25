@@ -13,8 +13,4 @@
   </svg>
 </template>
 
-<script>
-export default {
-  name: 'ServersIcon',
-};
-</script>
+<script setup></script>

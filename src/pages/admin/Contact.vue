@@ -2,10 +2,6 @@
   <Content title="Contact" />
 </template>
 
-<script>
+<script setup>
 import Content from '../../components/Content.vue';
-export default {
-  name: 'ContactPage',
-  components: { Content },
-};
 </script>

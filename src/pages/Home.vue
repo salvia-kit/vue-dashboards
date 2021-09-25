@@ -2,13 +2,6 @@
   <Content />
 </template>
 
-<script>
+<script setup>
 import Content from '../components/Content.vue';
-
-export default {
-  name: 'HomePage',
-  components: {
-    Content,
-  },
-};
 </script>

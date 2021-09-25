@@ -2,13 +2,6 @@
   <Content title="Servers" />
 </template>
 
-<script>
+<script setup>
 import Content from '../../components/Content.vue';
-
-export default {
-  name: 'ServersPage',
-  components: {
-    Content,
-  },
-};
 </script>
