@@ -1,19 +1,15 @@
+<script setup>
+import { inject } from 'vue';
+
+const toggle = inject('toggle');
+</script>
+
 <template>
-  <header class="bg-body h-20 items-center relative w-full z-10">
-    <div class="flex flex-col h-full justify-center mx-auto px-3 relative">
-      <div
-        class="
-          flex
-          items-center
-          pl-1
-          relative
-          w-full
-          sm:ml-0 sm:pr-2
-          lg:max-w-68
-        "
-      >
-        <div class="flex left-0 relative w-3/4">
-          <div class="flex group h-full items-center relative w-12">
+  <header class="relative z-10 h-20 w-full items-center bg-body">
+    <div class="relative mx-auto flex h-full flex-col justify-center px-3">
+      <div class="relative flex w-full items-center pl-1 sm:ml-0 sm:pr-2">
+        <div class="relative left-0 flex w-3/4">
+          <div class="group relative flex h-full w-12 items-center">
             <button
               type="button"
               aria-expanded="false"
@@ -26,16 +22,7 @@
           </div>
         </div>
         <div
-          class="
-            flex
-            items-center
-            justify-end
-            ml-5
-            p-1
-            relative
-            w-full
-            sm:mr-0 sm:right-auto
-          "
+          class="relative ml-5 flex w-full items-center justify-end p-1 sm:right-auto sm:mr-0"
         >
           <a href="#" class="block pr-5">
             <svg
@@ -67,11 +54,11 @@
               />
             </svg>
           </a>
-          <a href="#" class="block relative">
+          <a href="#" class="relative block">
             <img
               alt="Enoch Ndika"
               src="/images/1.jpg"
-              class="h-10 mx-auto object-cover rounded-full w-10"
+              class="mx-auto h-10 w-10 rounded-full object-cover"
             />
           </a>
         </div>
@@ -79,9 +66,3 @@
     </div>
   </header>
 </template>
-
-<script setup>
-import { inject } from 'vue';
-
-const toggle = inject('toggle');
-</script>

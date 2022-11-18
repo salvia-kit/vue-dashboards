@@ -1,7 +1,7 @@
-<template>
-  <Content title="Terminal" />
-</template>
-
 <script setup>
 import Content from '../../components/Content.vue';
 </script>
+
+<template>
+  <Content title="Terminal" />
+</template>

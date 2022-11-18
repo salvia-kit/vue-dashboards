@@ -1,3 +1,12 @@
+<script setup>
+defineProps({
+  extendClass: {
+    type: String,
+    default: '',
+  },
+});
+</script>
+
 <template>
   <svg
     viewBox="0 0 261.76 226.69"
@@ -22,14 +31,3 @@
     </g>
   </svg>
 </template>
-
-<script setup>
-import { defineProps } from 'vue';
-
-defineProps({
-  extendClass: {
-    type: String,
-    default: '',
-  },
-});
-</script>

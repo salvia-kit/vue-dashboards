@@ -1,3 +1,12 @@
+<script setup>
+defineProps({
+  extendClass: {
+    type: String,
+    default: '',
+  },
+});
+</script>
+
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -14,16 +23,3 @@
     />
   </svg>
 </template>
-
-<script setup>
-import { defineProps } from 'vue';
-
-defineProps({
-  extendClass: {
-    type: String,
-    default: '',
-  },
-});
-</script>
-
-<style scoped></style>

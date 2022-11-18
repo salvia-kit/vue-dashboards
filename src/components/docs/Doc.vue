@@ -1,9 +1,16 @@
+<script setup>
+import Snippet from './Snippet.vue';
+import JsIcon from './icons/JsIcon.vue';
+import VueIcon from './icons/VueIcon.vue';
+import FolderIcon from './icons/FolderIcon.vue';
+</script>
+
 <template>
-  <div class="py-8 max-w-full text-gray-700">
-    <h2 class="text-3xl font-medium mb-10 pl-3 md:pl-6">Documentation</h2>
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+  <div class="max-w-full py-8 text-gray-700">
+    <h2 class="mb-10 pl-3 text-3xl font-medium md:pl-6">Documentation</h2>
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">Features</h2>
-      <ul class="list-disc pl-6 mt-4">
+      <ul class="mt-4 list-disc pl-6">
         <li class="mb-4">Support of the active route (styled by default).</li>
         <li class="mb-4">
           Fully customizable and without external dependencies.
@@ -18,73 +25,73 @@
       </ul>
     </section>
 
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">File Structure</h2>
       <div class="pl-2">
-        <div class="flex mt-4 mb-3">
+        <div class="mt-4 mb-3 flex">
           <folder-icon />
           <span class="pl-2">src</span>
         </div>
-        <div class="pl-5 flex mb-3">
+        <div class="mb-3 flex pl-5">
           <folder-icon />
           <span class="pl-2">components</span>
         </div>
-        <div class="pl-5 flex mb-3">
+        <div class="mb-3 flex pl-5">
           <folder-icon />
           <span class="pl-2">dashboard</span>
         </div>
-        <div class="pl-11 flex mb-3">
+        <div class="mb-3 flex pl-11">
           <folder-icon />
           <span class="pl-2">sidenavigation</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <folder-icon />
           <span class="pl-2">icons</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <vue-icon />
           <span class="pl-2">Header.vue</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <vue-icon />
           <span class="pl-2">Index.vue</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <vue-icon />
           <span class="pl-2">Item.vue</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <vue-icon />
           <span class="pl-2">items.vue</span>
         </div>
-        <div class="pl-11 flex mb-3">
+        <div class="mb-3 flex pl-11">
           <folder-icon />
           <span class="pl-2">topnavigation</span>
         </div>
-        <div class="pl-16 flex mb-3">
+        <div class="mb-3 flex pl-16">
           <vue-icon />
           <span class="pl-2">Index.vue</span>
         </div>
-        <div class="pl-11 flex mb-3">
+        <div class="mb-3 flex pl-11">
           <vue-icon />
           <span class="pl-2">Layout.vue</span>
         </div>
-        <div class="pl-3 flex mb-3">
+        <div class="mb-3 flex pl-3">
           <folder-icon />
           <span class="pl-2">pages</span>
         </div>
-        <div class="pl-3 flex mb-3">
+        <div class="mb-3 flex pl-3">
           <js-icon />
           <span class="pl-2">main.js</span>
         </div>
-        <div class="pl-3 flex mb-3">
+        <div class="mb-3 flex pl-3">
           <js-icon />
           <span class="pl-2">routes.js</span>
         </div>
       </div>
     </section>
 
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">File Structure explained</h2>
       <p class="mt-5">
         We will focus on <span class="font-medium">dashboard</span> folder and
@@ -96,7 +103,7 @@
         <div class="flex">
           <folder-icon /> <strong class="px-1">provider</strong>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-4">
+        <div class="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon extend-class="h-7 w-7" />
           <span class="px-2 font-medium">Context.vue</span> :
           <p class="pl-2">
@@ -107,7 +114,7 @@
             route changes or on click outside.
           </p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-6">
+        <div class="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon />
           <span class="px-2 font-medium">Overlay.vue</span> :
           <p class="pl-2">
@@ -121,7 +128,7 @@
         <div class="flex">
           <folder-icon /> <strong class="px-1">sidenavigation</strong>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-4">
+        <div class="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
           <folder-icon extend-class="h-7 w-7" />
           <span class="px-2 font-medium">icons</span> :
           <p class="pl-1">
@@ -132,21 +139,21 @@
             or other
           </p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-10">
+        <div class="mt-10 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon /> <span class="px-2 font-medium">Header.vue</span> :
           <p class="pl-1">
             The <span class="font-medium"> sidenav-header</span> component
             contains the logo that is displayed on top of the sidenav
           </p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-6">
+        <div class="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon /><span class="px-2 font-medium">Item.vue</span> :
           <p class="pl-1">
             Contains the <span class="font-medium">sidenav-item</span> component
             which represents each item of the sidenav.
           </p>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-6">
+        <div class="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon /><span class="px-2 font-medium">Items.vue</span> :
           <p class="pl-1">
             This <span class="font-medium">sidenav-items</span> component
@@ -154,29 +161,29 @@
             <span class="font-medium"> sidenav-item</span> component
           </p>
         </div>
-        <div class="flex flex-wrap mt-8 pl-8 mb-12">
+        <div class="mt-8 mb-12 flex flex-wrap pl-8">
           <div class="md:w-6/12">
             <Snippet />
           </div>
-          <ul class="pt-8 md:pt-4 md:pl-4 md:w-6/12">
+          <ul class="pt-8 md:w-6/12 md:pt-4 md:pl-4">
             <li class="mb-2">
               <span class="px-1 font-bold">Props</span>
             </li>
             <li class="mb-2">
-              <strong class="font-medium px-1">title :</strong> text that
+              <strong class="px-1 font-medium">title :</strong> text that
               indicate the route
             </li>
             <li class="mb-2">
-              <strong class="font-medium px-1">to :</strong> name of the route
+              <strong class="px-1 font-medium">to :</strong> name of the route
             </li>
             <li class="mb-2">
-              <strong class="font-medium px-1">sidenav-item slot :</strong> the
+              <strong class="px-1 font-medium">sidenav-item slot :</strong> the
               icon, imported from <strong class="px-1">icons</strong> folder or
               from your library
             </li>
           </ul>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-6">
+        <div class="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon /> <span class="px-2 font-medium">Index.vue</span> :
           <p class="pl-1">
             This <span class="font-medium">side-navigation</span> component
@@ -186,10 +193,10 @@
       </div>
 
       <div>
-        <div class="flex mt-8">
+        <div class="mt-8 flex">
           <folder-icon /> <strong class="px-1">topnavigation</strong>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap pl-6 mt-4">
+        <div class="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
           <vue-icon /> <span class="px-2 font-medium">Index.vue</span> :
           <p class="pl-1">
             Contains the
@@ -201,7 +208,7 @@
       </div>
 
       <div>
-        <div class="flex flex-wrap md:flex-nowrap mt-8">
+        <div class="mt-8 flex flex-wrap md:flex-nowrap">
           <vue-icon /> <strong class="px-1">Layout.vue :</strong> Contains the
           <span class="px-1 font-medium">dashboard-layout</span> component used
           as the layout of the application
@@ -209,9 +216,9 @@
       </div>
     </section>
 
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">How it works ?</h2>
-      <ul class="pl-6 list-disc mt-4">
+      <ul class="mt-4 list-disc pl-6">
         <li class="mb-3">
           Add your routes and items in the
           <span class="font-medium">dashboard/sidenavigation/items.vue</span>
@@ -230,7 +237,7 @@
       </ul>
     </section>
 
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">Auto Format and Linting</h2>
       <div class="mt-4">
         The dashboard is provided with <span class="font-medium">eslint</span>,
@@ -243,7 +250,7 @@
       </div>
     </section>
 
-    <section class="mb-16 px-3 md:px-8 py-8 shadow bg-white">
+    <section class="mb-16 bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">Export</h2>
       <p class="mt-4">
         As there is no vendor lock-in, if you already have a dashboard, you can
@@ -254,7 +261,7 @@
         into your project
       </p>
       <div class="mt-8">
-        <ul class="pl-6 list-disc mt-4">
+        <ul class="mt-4 list-disc pl-6">
           <li class="mb-3">
             Add your routes and items in the
             <span class="px-1 font-medium"
@@ -271,7 +278,7 @@
       </div>
     </section>
 
-    <section class="px-3 md:px-8 py-8 shadow bg-white">
+    <section class="bg-white px-3 py-8 shadow md:px-8">
       <h2 class="text-2xl font-medium">Customization</h2>
       <p class="mt-5">
         You can customize everything according to your preferences if it doesn't
@@ -291,7 +298,7 @@
         positioning of the sidenav on mobile.
       </p>
       <p class="pt-5">This prop can have two possible values :</p>
-      <ul class="pl-6 mt-4 list-disc">
+      <ul class="mt-4 list-disc pl-6">
         <li class="mb-3">
           <strong>left :</strong> sidenav will be aligned to the left
         </li>
@@ -300,10 +307,3 @@
     </section>
   </div>
 </template>
-
-<script setup>
-import Snippet from './Snippet.vue';
-import JsIcon from './icons/JsIcon.vue';
-import VueIcon from './icons/VueIcon.vue';
-import FolderIcon from './icons/FolderIcon.vue';
-</script>

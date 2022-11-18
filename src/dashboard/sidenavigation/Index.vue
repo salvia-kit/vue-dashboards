@@ -1,27 +1,5 @@
-<template>
-  <aside
-    class="
-      scrollbar
-      bg-body
-      h-screen
-      overflow-y-auto
-      top-0
-      lg:flex lg:relative lg:w-64 lg:z-auto
-    "
-    :class="[
-      style[mobilePosition],
-      open ? 'absolute w-8/12 z-40 sm:w-5/12' : 'hidden',
-    ]"
-  >
-    <div class="pb-32 lg:pb-12">
-      <sidenav-header />
-      <sidenav-items />
-    </div>
-  </aside>
-</template>
-
 <script setup>
-import { inject, defineProps } from 'vue';
+import { inject } from 'vue';
 import SidenavItems from './Items.vue';
 import SidenavHeader from './Header.vue';
 
@@ -39,6 +17,21 @@ const style = {
   right: 'right-0',
 };
 </script>
+
+<template>
+  <aside
+    class="scrollbar top-0 h-screen overflow-y-auto bg-body lg:relative lg:z-auto lg:flex lg:w-64"
+    :class="[
+      style[mobilePosition],
+      open ? 'absolute w-8/12 z-40 sm:w-5/12' : 'hidden',
+    ]"
+  >
+    <div class="pb-32 lg:pb-12">
+      <SidenavHeader />
+      <SidenavItems />
+    </div>
+  </aside>
+</template>
 
 <style scoped>
 .scrollbar::-webkit-scrollbar {

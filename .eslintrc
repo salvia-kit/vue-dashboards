@@ -6,6 +6,10 @@
   "extends": [
     "plugin:vue/vue3-recommended",
     "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
     "eslint:recommended"
-  ]
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  }
 }

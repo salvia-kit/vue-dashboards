@@ -1,24 +1,6 @@
-<template>
-  <pre
-    class="
-      font-mono
-      text-sm
-      px-4
-      py-1
-      rounded
-      overflow-x-auto
-      max-w-full
-      bg-gray-100
-      text-blue-600
-      border
-    "
-  >
-    {{ snippets }}
-  </pre>
-</template>
-
 <script setup>
-const snippets = `<sidenav-item title="Dashboard" to="/">
+const snippets = `
+    <sidenav-item title="Dashboard" to="/">
       <dashboard-icon />
     </sidenav-item>
 
@@ -26,3 +8,11 @@ const snippets = `<sidenav-item title="Dashboard" to="/">
       <projects-icon />
     </sidenav-item>`;
 </script>
+
+<template>
+  <pre
+    class="max-w-full overflow-x-auto rounded border bg-gray-100 px-4 py-1 font-mono text-sm text-blue-600"
+  >
+    {{ snippets }}
+  </pre>
+</template>

@@ -1,39 +1,3 @@
-<template>
-  <ul class="md:pl-6">
-    <sidenav-item title="Users" to="/">
-      <users-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Medias" to="/admin/medias">
-      <medias-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Contacts" to="/admin/contact">
-      <contact-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Servers" to="/admin/servers">
-      <servers-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Settings" to="/admin/settings">
-      <settings-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Terminal" to="/admin/terminal">
-      <terminal-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Recycle Bin" to="/admin/recycle-bin">
-      <recycle-bin-icon />
-    </sidenav-item>
-
-    <sidenav-item title="Documentation" to="/admin/documentation">
-      <documentation-icon />
-    </sidenav-item>
-  </ul>
-</template>
-
 <script setup>
 import SidenavItem from './Item.vue';
 
@@ -47,3 +11,39 @@ import SettingsIcon from './icons/Settings.vue';
 import RecycleBinIcon from './icons/RecycleBin.vue';
 import DocumentationIcon from './icons/Documentation.vue';
 </script>
+
+<template>
+  <ul class="md:pl-6">
+    <SidenavItem title="Users" to="/">
+      <UsersIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Medias" to="/admin/medias">
+      <MediasIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Contacts" to="/admin/contact">
+      <ContactIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Servers" to="/admin/servers">
+      <ServersIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Settings" to="/admin/settings">
+      <SettingsIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Terminal" to="/admin/terminal">
+      <TerminalIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Recycle Bin" to="/admin/recycle-bin">
+      <RecycleBinIcon />
+    </SidenavItem>
+
+    <SidenavItem title="Documentation" to="/admin/documentation">
+      <DocumentationIcon />
+    </SidenavItem>
+  </ul>
+</template>

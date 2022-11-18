@@ -1,7 +1,3 @@
-<template>
-  <slot />
-</template>
-
 <script setup>
 import { provide, ref, readonly, watch, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
@@ -28,3 +24,7 @@ watch(route, () => {
 provide('open', readonly(open));
 provide('toggle', toggle);
 </script>
+
+<template>
+  <slot />
+</template>

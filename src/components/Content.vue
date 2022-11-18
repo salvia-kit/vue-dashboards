@@ -1,22 +1,23 @@
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    default: '',
+  },
+});
+</script>
+
 <template>
   <div class="flex flex-col flex-wrap sm:flex-row">
-    <div class="w-full md:w-4/12 pr-2 mb-6">
-      <div class="shadow rounded-2xl p-4 bg-white dark:bg-gray-800">
+    <div class="mb-6 w-full pr-2 md:w-4/12">
+      <div class="rounded-2xl bg-white p-4 shadow dark:bg-gray-800">
         <div class="flex items-center">
-          <span class="rounded-xl relative p-4 bg-purple-200">
+          <span class="relative rounded-xl bg-purple-200 p-4">
             <svg
               width="40"
               fill="currentColor"
               height="40"
-              class="
-                text-purple-500
-                h-4
-                absolute
-                top-1/2
-                left-1/2
-                transform
-                -translate-x-1/2 -translate-y-1/2
-              "
+              class="absolute top-1/2 left-1/2 h-4 -translate-x-1/2 -translate-y-1/2 text-purple-500"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -25,24 +26,18 @@
               />
             </svg>
           </span>
-          <p class="text-md text-black dark:text-white ml-2">
+          <p class="ml-2 text-black dark:text-white">
             {{ title || 'Total Gains' }}
           </p>
         </div>
         <div class="flex flex-col justify-start">
           <p
-            class="
-              text-gray-700
-              dark:text-gray-100
-              text-4xl text-left
-              font-bold
-              my-4
-            "
+            class="my-4 text-left text-4xl font-bold text-gray-700 dark:text-gray-100"
           >
             34,500
             <span class="text-sm">$</span>
           </p>
-          <div class="flex items-center text-green-500 text-sm">
+          <div class="flex items-center text-sm text-green-500">
             <svg
               width="20"
               height="20"
@@ -60,23 +55,15 @@
         </div>
       </div>
     </div>
-    <div class="w-full md:w-4/12 pr-2 mb-6">
-      <div class="shadow rounded-2xl p-4 bg-white dark:bg-gray-800">
+    <div class="mb-6 w-full pr-2 md:w-4/12">
+      <div class="rounded-2xl bg-white p-4 shadow dark:bg-gray-800">
         <div class="flex items-center">
-          <span class="rounded-xl relative p-4 bg-purple-200">
+          <span class="relative rounded-xl bg-purple-200 p-4">
             <svg
               width="40"
               fill="currentColor"
               height="40"
-              class="
-                text-purple-500
-                h-4
-                absolute
-                top-1/2
-                left-1/2
-                transform
-                -translate-x-1/2 -translate-y-1/2
-              "
+              class="absolute top-1/2 left-1/2 h-4 -translate-x-1/2 -translate-y-1/2 text-purple-500"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -85,22 +72,16 @@
               />
             </svg>
           </span>
-          <p class="text-md text-black dark:text-white ml-2">Outgoings</p>
+          <p class="ml-2 text-black dark:text-white">Outgoings</p>
         </div>
         <div class="flex flex-col justify-start">
           <p
-            class="
-              text-gray-700
-              dark:text-gray-100
-              text-4xl text-left
-              font-bold
-              my-4
-            "
+            class="my-4 text-left text-4xl font-bold text-gray-700 dark:text-gray-100"
           >
             10,000
             <span class="text-sm">$</span>
           </p>
-          <div class="flex items-center text-green-500 text-sm">
+          <div class="flex items-center text-sm text-green-500">
             <svg
               width="20"
               height="20"
@@ -119,22 +100,14 @@
       </div>
     </div>
     <div class="w-full md:w-4/12">
-      <div class="shadow rounded-2xl p-4 bg-white dark:bg-gray-800">
+      <div class="rounded-2xl bg-white p-4 shadow dark:bg-gray-800">
         <div class="flex items-center">
-          <span class="rounded-xl relative p-4 bg-purple-200">
+          <span class="relative rounded-xl bg-purple-200 p-4">
             <svg
               width="40"
               fill="currentColor"
               height="40"
-              class="
-                text-purple-500
-                h-4
-                absolute
-                top-1/2
-                left-1/2
-                transform
-                -translate-x-1/2 -translate-y-1/2
-              "
+              class="absolute top-1/2 left-1/2 h-4 -translate-x-1/2 -translate-y-1/2 text-purple-500"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -143,22 +116,16 @@
               />
             </svg>
           </span>
-          <p class="text-md text-black dark:text-white md:ml-4">Bonus</p>
+          <p class="text-black dark:text-white md:ml-4">Bonus</p>
         </div>
         <div class="flex flex-col justify-start">
           <p
-            class="
-              text-gray-700
-              dark:text-gray-100
-              text-4xl text-left
-              font-bold
-              my-4
-            "
+            class="my-4 text-left text-4xl font-bold text-gray-700 dark:text-gray-100"
           >
             3500
             <span class="text-sm">$</span>
           </p>
-          <div class="flex items-center text-green-500 text-sm">
+          <div class="flex items-center text-sm text-green-500">
             <svg
               width="20"
               height="20"
@@ -178,60 +145,26 @@
     </div>
 
     <div
-      class="
-        shadow-lg
-        rounded-xl
-        w-full
-        md:w-3/12
-        p-4
-        md:mr-2
-        bg-white
-        dark:bg-gray-800
-        relative
-        overflow-hidden
-        mt-8
-      "
+      class="relative mt-8 w-full overflow-hidden rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 md:mr-2 md:w-3/12"
     >
-      <p
-        class="
-          text-gray-600
-          font-light
-          dark:text-white
-          text-xl
-          font-medium
-          mb-6
-        "
-      >
+      <p class="mb-6 text-xl text-gray-600 dark:text-white">
         Popular Investissors
       </p>
       <div class="grid grid-cols-3 gap-4">
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="Enoch Ndika"
                 src="/images/1.jpg"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -240,37 +173,24 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2">
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">
             Enoch Ndika
           </span>
         </div>
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="Lionel Messi"
                 src="/images/2.jpg"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -279,37 +199,24 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2"
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400"
             >Lionel Messi
           </span>
         </div>
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="Jonathan Ilunga"
                 src="/images/4.jpg"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -318,37 +225,24 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2">
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">
             Jonathan Ilunga
           </span>
         </div>
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="Maurice Lokumba"
                 src="/images/5.jpg"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -357,37 +251,24 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2">
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">
             Maurice Lokumba
           </span>
         </div>
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="CR7"
                 src="/images/3.png"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -396,37 +277,24 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2">
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">
             Cristiano Ronaldo
           </span>
         </div>
         <div class="flex flex-col items-center">
           <div class="relative">
-            <a href="#" class="block relative">
+            <a href="#" class="relative block">
               <img
                 alt="Dave Glad"
                 src="/images/6.jpg"
-                class="mx-auto object-cover rounded-full h-10 w-10"
+                class="mx-auto h-10 w-10 rounded-full object-cover"
               />
             </a>
             <svg
               width="10"
               height="10"
               fill="currentColor"
-              class="
-                fill-current
-                text-white
-                bg-blue-600
-                rounded-full
-                p-1
-                absolute
-                bottom-0
-                right-0
-                w-4
-                h-4
-                -mx-1
-                -my-1
-              "
+              class="absolute bottom-0 right-0 -m-1 h-4 w-4 rounded-full bg-blue-600 fill-current p-1 text-white"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -435,91 +303,54 @@
               />
             </svg>
           </div>
-          <span class="text-gray-600 dark:text-gray-400 text-xs mt-2">
+          <span class="mt-2 text-xs text-gray-600 dark:text-gray-400">
             Dave Glad
           </span>
         </div>
       </div>
     </div>
     <div
-      class="
-        shadow-lg
-        rounded-xl
-        w-full
-        md:w-4/12
-        mt-8
-        md:ml-2
-        p-4
-        bg-white
-        dark:bg-gray-800
-        text-gray-700
-        relative
-        overflow-hidden
-      "
+      class="relative mt-8 w-full overflow-hidden rounded-xl bg-white p-4 text-gray-700 shadow-lg dark:bg-gray-800 md:ml-2 md:w-4/12"
     >
-      <a href="#" class="w-full h-full block">
+      <a href="#" class="block h-full w-full">
         <div class="w-full">
-          <p class="text-gray-700 dark:text-white text-2xl font-light mb-4">
+          <p class="mb-4 text-2xl font-light text-gray-700 dark:text-white">
             Task Progress
           </p>
-          <div class="flex items-center justify-between text-gray-400 text-sm">
+          <div class="flex items-center justify-between text-sm text-gray-400">
             <p>Design</p>
             <p>3/8</p>
           </div>
-          <div class="w-full h-2 bg-green-100 rounded-full mb-4">
+          <div class="mb-4 h-2 w-full rounded-full bg-green-100">
             <div
-              class="
-                w-1/3
-                h-full
-                text-center text-xs text-white
-                bg-green-400
-                rounded-full
-              "
+              class="h-full w-1/3 rounded-full bg-green-400 text-center text-xs text-white"
             />
           </div>
-          <div class="flex items-center justify-between text-gray-400 text-sm">
+          <div class="flex items-center justify-between text-sm text-gray-400">
             <p>Development</p>
             <p>6/10</p>
           </div>
-          <div class="w-full h-2 bg-indigo-100 rounded-full mb-4">
+          <div class="mb-4 h-2 w-full rounded-full bg-indigo-100">
             <div
-              class="
-                w-2/3
-                h-full
-                text-center text-xs text-white
-                bg-indigo-400
-                rounded-full
-              "
+              class="h-full w-2/3 rounded-full bg-indigo-400 text-center text-xs text-white"
             />
           </div>
-          <div class="flex items-center justify-between text-gray-400 text-sm">
+          <div class="flex items-center justify-between text-sm text-gray-400">
             <p>DevOps</p>
             <p>2/8</p>
           </div>
-          <div class="w-full h-2 bg-blue-100 rounded-full mb-4">
+          <div class="mb-4 h-2 w-full rounded-full bg-blue-100">
             <div
-              class="
-                w-1/4
-                h-full
-                text-center text-xs text-white
-                bg-blue-400
-                rounded-full
-              "
+              class="h-full w-1/4 rounded-full bg-blue-400 text-center text-xs text-white"
             />
           </div>
-          <div class="flex items-center justify-between text-gray-400 text-sm">
+          <div class="flex items-center justify-between text-sm text-gray-400">
             <p>Marketing</p>
             <p>8/8</p>
           </div>
-          <div class="w-full h-2 bg-pink-100 rounded-full">
+          <div class="h-2 w-full rounded-full bg-pink-100">
             <div
-              class="
-                w-full
-                h-full
-                text-center text-xs text-white
-                bg-pink-400
-                rounded-full
-              "
+              class="h-full w-full rounded-full bg-pink-400 text-center text-xs text-white"
             />
           </div>
         </div>
@@ -527,38 +358,18 @@
     </div>
 
     <div
-      class="
-        shadow-lg
-        rounded-xl
-        w-full
-        md:w-4/12 md:ml-4
-        mt-8
-        p-4
-        bg-white
-        dark:bg-gray-800
-        relative
-        overflow-hidden
-      "
+      class="relative mt-8 w-full overflow-hidden rounded-xl bg-white p-4 shadow-lg dark:bg-gray-800 md:ml-4 md:w-4/12"
     >
-      <div class="w-full flex items-center justify-between mb-8">
-        <p class="text-gray-800 dark:text-white text-xl">Account</p>
+      <div class="mb-8 flex w-full items-center justify-between">
+        <p class="text-xl text-gray-800 dark:text-white">Account</p>
         <a
           href="#"
-          class="
-            flex
-            items-center
-            text-sm
-            hover:text-gray-600
-            dark:text-gray-50 dark:hover:text-white
-            text-gray-300
-            border-0
-            focus:outline-none
-          "
+          class="flex items-center border-0 text-sm text-gray-300 hover:text-gray-600 focus:outline-none dark:text-gray-50 dark:hover:text-white"
         >
           VIEW ALL
         </a>
       </div>
-      <div class="flex items-center mb-6 rounded justify-between">
+      <div class="mb-6 flex items-center justify-between rounded">
         <span class="rounded-lg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -576,17 +387,9 @@
             </g>
           </svg>
         </span>
-        <div class="flex items-center w-full justify-between">
+        <div class="flex w-full items-center justify-between">
           <div
-            class="
-              flex
-              text-sm
-              flex-col
-              w-full
-              ml-2
-              items-start
-              justify-between
-            "
+            class="ml-2 flex w-full flex-col items-start justify-between text-sm"
           >
             <p class="dark:text-white">American Express</p>
             <p class="text-gray-300">Wallet deposit</p>
@@ -594,7 +397,7 @@
           <span class="text-green-400">+$3,124</span>
         </div>
       </div>
-      <div class="flex items-center mb-6 rounded justify-between">
+      <div class="mb-6 flex items-center justify-between rounded">
         <span class="rounded-lg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -624,17 +427,9 @@
             </g>
           </svg>
         </span>
-        <div class="flex items-center w-full justify-between">
+        <div class="flex w-full items-center justify-between">
           <div
-            class="
-              flex
-              text-sm
-              flex-col
-              w-full
-              ml-2
-              items-start
-              justify-between
-            "
+            class="ml-2 flex w-full flex-col items-start justify-between text-sm"
           >
             <p class="dark:text-white">Visa Premier</p>
             <p class="text-gray-300">Wallet deposit</p>
@@ -642,7 +437,7 @@
           <span class="text-green-400">+$23,240</span>
         </div>
       </div>
-      <div class="flex items-center mb-6 rounded justify-between">
+      <div class="mb-6 flex items-center justify-between rounded">
         <span class="rounded-lg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -680,17 +475,9 @@
             </g>
           </svg>
         </span>
-        <div class="flex items-center w-full justify-between">
+        <div class="flex w-full items-center justify-between">
           <div
-            class="
-              flex
-              text-sm
-              flex-col
-              w-full
-              ml-2
-              items-start
-              justify-between
-            "
+            class="ml-2 flex w-full flex-col items-start justify-between text-sm"
           >
             <p class="dark:text-white">MasterCard</p>
             <p class="text-gray-300">Wallet deposit</p>
@@ -698,7 +485,7 @@
           <span class="text-red-400">-$1,904</span>
         </div>
       </div>
-      <div class="flex items-center rounded justify-between">
+      <div class="flex items-center justify-between rounded">
         <span class="rounded-lg">
           <svg
             width="40"
@@ -733,17 +520,9 @@
             />
           </svg>
         </span>
-        <div class="flex items-center w-full justify-between">
+        <div class="flex w-full items-center justify-between">
           <div
-            class="
-              flex
-              text-sm
-              flex-col
-              w-full
-              ml-2
-              items-start
-              justify-between
-            "
+            class="ml-2 flex w-full flex-col items-start justify-between text-sm"
           >
             <p class="dark:text-white">Paypal</p>
             <p class="text-gray-300">Wallet deposit</p>
@@ -754,14 +533,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { defineProps } from 'vue';
-
-defineProps({
-  title: {
-    type: String,
-    default: '',
-  },
-});
-</script>
